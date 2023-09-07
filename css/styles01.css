@@ -235,5 +235,79 @@ svg {
     
 
 /* form */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+:root{
+    --clr-bg: #88080800;
+    --clr-primary: rgba(238, 25, 185, 0.877);
+    --clr-secondary: rgba(236, 38, 24, 0);
+}
+body {
+    min-height: 90vh;
+    font-family: 'poppins', Arial;
+    column-gap: 20px;
+    align-items: stretch;
+    position: absolute;
+    
+}
+.subscription-form {
+    min-width: 150px;
+    text-align: center;
+    background-color: #cccccc9c;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: none;
+    border-radius: 60px 100px;
+}
+  
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+h2 span{
+    color: var(--clr-primary);
+}
+input[type="email"] {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #f828cb;
+    border-radius: 5px;
+}
+input[type="Telefono"] {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #f11abc;
+  border-radius: 5px;
+}input[type="Name"] {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #f51da2;
+  border-radius: 5px;
+}
+  
+button[type="submit"] {
+    padding: 10px 20px;
+    background-color: var(--clr-primary);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: all .25s ease-in;
+}
+  
+button[type="submit"]:hover {
+    background-color: var(--clr-secondary);
+}
+  
 
