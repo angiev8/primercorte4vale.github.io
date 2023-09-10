@@ -11,7 +11,14 @@ body{
   min-height: 100vh;
   background-image: url('../images/index.jpg');
   background-size: cover;
-  background-position: 5%;
+  background-position: 20%;
+  background-repeat: no-repeat;
+  background-position: center center; /* Opcional: centra la imagen en el contenedor */
+  background-attachment: fixed; /* Opcional: imagen fija durante el scroll */
+
+  
+
+
 }
 ul{
   position: relative;
