@@ -27,12 +27,7 @@ header {
   height: 160px;
   background-image: url(../images/header.jpg);
 }
-h1 {
-  text-indent: 1px;
-  width: 940px;
-  height: 130px;
-  margin: 0px;
-}
+
 nav,
 footer {
   clear: both;
@@ -98,7 +93,7 @@ a {
   color: #de6581;
   text-decoration: none;
 }
-h1,
+
 h2,
 h3 {
   font-weight: normal;
