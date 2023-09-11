@@ -4,15 +4,126 @@
 
   Licensed under GPL and MIT.
 */
+@font-face {
+  font-family: 'QuicksandBook';
+  src: url('fonts/Quicksand_Book-webfont.eot');
+  src: url('fonts/Quicksand_Book-webfont.eot?#iefix') format('embedded-opentype'),
+    url('fonts/Quicksand_Book-webfont.woff') format('woff'),
+    url('fonts/Quicksand_Book-webfont.ttf') format('truetype'),
+    url('fonts/Quicksand_Book-webfont.svg#QuicksandBook') format('svg');
+  font-weight: normal;
+  font-style: normal;}
+body {
+  color: #ffffff;
+  background: #413f3b url("images/bg.jpg");
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 90%;
+  margin: 0px;
+  text-align: center;}
+a {
+  color: #b5c1ad;
+  text-decoration: none;}
+a:hover {
+  color: #ffffff;}
+.header {
+  background-image: url("images/bg-header.jpg");
+  padding: 0px 0px 0px 0px;
+  height: 100px;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 50;}
+.nav {
+  float: left;
+  font-family: QuicksandBook, Helvetica, Arial, sans-serif;
+  padding: 45px 0px 0px 0px;
+  text-align: left;
+  font-size: 16px;
+  display: none;
+}
+.wrapper {
+  width: 960px;
+  margin: 0px auto;
+  background-image: url("images/bg-triangle.png");
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+  text-align: center;}
+.logo {
+  margin-bottom: 20px;}
+h1, h2 {
+  font-family: QuicksandBook, Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;}
+h1 {
+  font-size: 240%;
+  margin-top: 140px;}
+.date {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 75%;
+  color: #b5c1ad;}
+.intro {
+  clear: left;
+  font-size: 90%;
+  line-height: 1.4em;}
+.main-story {
 
-/*
-  Forces backgrounds to span full width,
-  even if there is horizontal scrolling.
-  Increase this if your layout is wider.
+  background-image: url("images/triangles.png");
+  background-repeat: no-repeat;
+  background-position: 122px 142px;
+  height: 570px;}
 
-  Note: IE6 works fine without this fix.
+  .main-story h1{
+    padding-top: 100px;
+  }
+.more-articles {
+  border-top: 1px solid #ffffff;
+  padding: 10px;}
+.more-articles p {
+  border-bottom: 1px solid #807c72;
+  padding: 5px 0px 15px 0px;
+  font-size: 80%;}
+.more-articles p:last-child {
+  border-bottom: none;}
+.footer {
+  clear: both;
+  background: rgba(0, 0, 0, 0.2);
+  padding: 5px 10px;}
+.footer p {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 75%;
+  text-align: right;}
+.footer a {
+  color: #807c72;}
+
+.header{
+  background-image: url(https://vod.roams.es/images/post/es_ES_vod/deportes-motor-formula1.svg);
+  height: 100px;
+  position: flex;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+/*pantalla mas pequeña
 */
+@media (max-width: 768px) {
+  .nav .header {
+    text-align: center; /* Centra los enlaces horizontalmente */
+    
+  }
 
+  .nav a {
+   font-size: 12px;
+    margin: 5px 0;
+    display: none; /* Espacio entre los enlaces */
+    display: block;
+	float: none;
+  }
+
+}
+
+/* `Containers
+----------------------------------------------------------------------------------------------------*/
 body {
   min-width: 960px;
 }
@@ -348,4 +459,128 @@ body {
 
 .clearfix {
   zoom: 1;
+}
+
+
+
+
+
+
+ul {
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	position: absolute;
+}
+
+/*Crea la listahorizontal con espacio*/
+li {
+	display:inline-block;
+	float: left center;
+	margin-right: 10px;
+}
+
+/* Estilos para los link */
+li a {
+	display:block;
+	min-width:140px;
+	height: 50px;
+	text-align:  center;
+	line-height: 50px;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #fdfdfd;
+	background: #fcf7f700;
+	text-decoration: none;
+  transition:all 0.5s ease;
+}
+
+/* estados hover de los link */
+li:hover a {
+	background: #ff0000;
+  margin-inline-start: 10%;
+}
+
+/* estilos del dropdown */
+li:hover ul a {
+	background: #f3f3f3;
+	color: #ffffff;
+	height: 40px;
+	line-height: 40px;
+}
+
+/* estilos del estado hover del dropdown*/
+li:hover ul a:hover {
+	background: #fdfdfd;
+	color: #fff;
+}
+
+/*Oculta el dropdown*/
+li ul {
+	display: none;
+}
+
+/* Pone el dropdown en vertical */
+li ul li {
+	display: block;
+	float: none;
+}
+
+/* Previene el texto wrapping */
+li ul li a {
+	width: auto;
+	min-width: 100px;
+	padding: 0 20px;
+}
+
+/* Aparace el dropdown en hover*/
+ul li a:hover + .hidden, .hidden:hover {
+	display: block;
+}
+
+/* Estilo de .muestra-menu */
+.show-menu {
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	text-decoration:overline;
+	color: #fff;
+	background: #19c58900;
+	text-align: left;
+  margin: 10% 10px 0px 10px;
+	padding: 0px 0;
+	display: none;
+  transition:all 0.2s ease;
+}
+
+
+/*Oculta el checkbox*/
+input[type=checkbox]{
+    display: none;
+}
+
+/* muestra el menu cuando el checkbox is checked*/
+input[type=checkbox]:checked ~ #menu{
+    display: block;
+}
+
+
+/* estilos responsive */
+
+@media screen and (max-width : 760px){
+	/*Hace que el dropdown links aparescan en linea */
+	ul {
+		position: left;
+    margin: auto;
+		display: none;
+	}
+	/*Crea espacio vertical */
+	li {
+		margin-bottom: -10px;
+	}
+	/* crea todo el menu links  ancho full */
+	ul li, li a {
+		width: 100%;
+	}
+	/*Display '.muestra-menu' link*/
+	.show-menu {
+		display:block;
+	}
 }
