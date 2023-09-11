@@ -10,56 +10,47 @@
 body {
   font-family: Arial, Verdana, sans-serif;
   font-size: 90%;
-  color: #666666;
-  background-color: #e0e0e0;
+  color: #000000;
+  background-color: #dfdfdff3;
   width: 100%;
 }
-
 @import url(https://fonts.googleapis.com/css?family=Montserrat);
-
 svg {
     display: block;
-    font: 9em 'Montserrat';
+    font: 9em  'Poppins';
     width: 90%;
     height: 300px;
     margin: 0 auto;
     margin-top: 10px;
 }
-
 .titulo{
   text-anchor: middle;
   max-height: 190px;
 }
-
 .text-copy {
     fill: none;
-    stroke: white;
+    stroke: rgb(65, 49, 214);
     stroke-dasharray: 6% 29%;
     stroke-width: 5px;
     stroke-dashoffset: 0%;
     animation: stroke-offset 5.5s infinite linear;
 }
-
 .text-copy:nth-child(1){
 	stroke: #561a7e;
 	animation-delay: -1;
 }
-
 .text-copy:nth-child(2){
 	stroke: #cf1578;
 	animation-delay: -2s;
 }
-
 .text-copy:nth-child(3){
 	stroke: #e8d21d;
 	animation-delay: -3s;
 }
-
 .text-copy:nth-child(4){
 	stroke: #039fbe;
 	animation-delay: -4s;
 }
-
 .text-copy:nth-child(5){
 	stroke: #fd175c;
 	animation-delay: -5s;
@@ -69,30 +60,17 @@ svg {
 	100% {stroke-dashoffset: -35%;}
 }
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
-
-
 .services{
     display: flex;
     justify-content: space-evenly;
-    text-align: center;
-    
+    text-align: center;  
 }
 .service{
     padding: 55px;
     margin: 0px 100px;
     box-shadow: 0px 0px 20px rgba(255, 13, 154, 0.479);
 }
-
-
-
-
-
-  
-
 @media  (max-width: 991px){
-
-
-  
     .services{
         flex-direction: column;
         padding: 20px 10px 0px 10px;
@@ -100,7 +78,6 @@ svg {
     .service{
         margin-bottom: 20px;
     }
-   
 }
 .capitales{
   font-size: 20px;
@@ -124,7 +101,6 @@ svg {
     font:  'Montserrat';
   }
     
-
 /* form */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 
@@ -160,7 +136,6 @@ body {
     margin: 0 auto;
     margin-top: 50px;
   }
-  
 h2 {
     font-size: 24px;
     margin-bottom: 20px;
@@ -188,7 +163,6 @@ input[type="Telefono"] {
   border: 1px solid #f51da2;
   border-radius: 5px;
 }
-  
 button[type="submit"] {
     padding: 10px 20px;
     background-color: var(--clr-primary);
@@ -200,7 +174,6 @@ button[type="submit"] {
     font-size: 1.1rem;
     transition: all .25s ease-in;
 }
-  
 button[type="submit"]:hover {
     background-color: var(--clr-secondary);
 }
