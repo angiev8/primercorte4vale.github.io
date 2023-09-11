@@ -4,6 +4,42 @@
 
   Licensed under GPL and MIT.
 */
+
+/*
+  Forces backgrounds to span full width,
+  even if there is horizontal scrolling.
+  Increase this if your layout is wider.
+
+  Note: IE6 works fine without this fix.
+*/
+
+body {
+  min-width: 960px;
+}
+
+section{
+	display: flex;
+	width: 550px;
+	height: 430px;
+  margin: 130px 10px 10px 200px;
+
+}
+section img {
+	width: 0px;
+	flex-grow: 1;
+	object-fit: cover;
+	opacity:8;
+	transition: 5s ease;
+
+}
+
+section img:hover{
+	cursor: crosshair;
+	width: 200px;
+	opacity: 1;
+	filter: contrast(120%);
+
+}
 @font-face {
   font-family: 'QuicksandBook';
   src: url('fonts/Quicksand_Book-webfont.eot');
@@ -14,17 +50,17 @@
   font-weight: normal;
   font-style: normal;}
 body {
-  color: #ffffff;
-  background: #413f3b url("images/bg.jpg");
+  color: #ffffff00;
+  background: #ffffff00 url("images\diseño.png");
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 90%;
   margin: 0px;
   text-align: center;}
 a {
-  color: #b5c1ad;
+  color: #000000;
   text-decoration: none;}
 a:hover {
-  color: #ffffff;}
+  color: #ffffff02;}
 .header {
   background-image: url("images/bg-header.jpg");
   padding: 0px 0px 0px 0px;
@@ -42,11 +78,11 @@ a:hover {
   display: none;
 }
 .wrapper {
-  width: 960px;
-  margin: 0px auto;
-  background-image: url("images/bg-triangle.png");
+  width: auto;
+  margin: 1px auto;
+  background-image: url("images\diseño.png");
   background-repeat: no-repeat;
-  background-position: 0px 0px;
+  background-position: 10px 10px;
   text-align: center;}
 .logo {
   margin-bottom: 20px;}
@@ -67,7 +103,7 @@ h1 {
   line-height: 1.4em;}
 .main-story {
 
-  background-image: url("images/triangles.png");
+  background-image: url("images\diseño.png");
   background-repeat: no-repeat;
   background-position: 122px 142px;
   height: 570px;}
@@ -76,7 +112,7 @@ h1 {
     padding-top: 100px;
   }
 .more-articles {
-  border-top: 1px solid #ffffff;
+  border-top: 1px solid #705e5e00;
   padding: 10px;}
 .more-articles p {
   border-bottom: 1px solid #807c72;
@@ -119,14 +155,10 @@ h1 {
     display: block;
 	float: none;
   }
-
 }
 
-/* `Containers
-----------------------------------------------------------------------------------------------------*/
-body {
-  min-width: 960px;
-}
+
+
 
 /* `Containers
 ----------------------------------------------------------------------------------------------------*/
@@ -460,8 +492,6 @@ body {
 .clearfix {
   zoom: 1;
 }
-
-
 
 
 
