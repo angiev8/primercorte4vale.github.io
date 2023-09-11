@@ -2,27 +2,35 @@
 body {
   color: #fc2828;
   background-color: #f9f8f6;
-  background-image: url('../images/fondo_rojo.avif');
+  background-image: url(data:image/jpeg;base64,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);
   background-position: center;
-  font-family: Georgia, Times, serif;
+  background-repeat: no-repeat;
+  background-size: cover; /* Hace que la imagen de fondo cubra todo el espacio */
   line-height: 0.0em;
-  margin: 100px;
+  margin: 9%; /* Elimina el margen para evitar espacios innecesarios */
+  padding: 0; /* Elimina el espacio de relleno para evitar espacios innecesarios */
   font-size: 16px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; /* Cambia la fuente si lo deseas */
+  display: flex center;
 }
 .wrapper {
-  max-width: 100%;
-  margin: 0 auto 10px auto;
+  max-width: auto;
+  margin: 10px 250px;
+  padding: 0;
   border: none;
   background-color: #ffffff;
   font-family: Georgia, Times, serif;
-  flex-direction: column-reverse;
+  text-align: center; /* Centra el contenido horizontalmente */
 }
+
+
 header {
-    height: 150px;
-    background-image: url(../images/Circuitos\ F1.png);
-    background-size: flex;
+    height: 110px;
+    background-image: url(https://static.vecteezy.com/system/resources/thumbnails/009/879/107/small/stock-illustration-drawing-in-doodle-style-crochet-inscription-cute-lettering-inscription-with-a-heart-crochet-crochet-needlework-hobby-vector.jpg);
+    background-size: contain;
     background-position: center; 
     background-repeat: no-repeat;
+    display: flex center;
     
  
 }
@@ -30,8 +38,8 @@ header {
 nav,
 footer {
   clear: both;
-  color: #ff1919f5;
-  background-color: #8a3b3b1e;
+  color: #ff0080;
+  background-color: #ec7ed154;
   height: 20px;
   text-align: center; /* Centra el contenido horizontalmente */
   padding: 10px 0; /* Añade espacio de relleno para mejorar la legibilidad */
@@ -40,43 +48,46 @@ footer {
 }
 nav ul {
   margin: 0px;
-  padding: 15px 10px 15px 20px;
+  padding: 10px 0px;
   list-style: none; /* Elimina los marcadores de lista */
+  text-align: center; /* Centra los elementos de navegación horizontalmente */
 
 }
 nav li {
   display: inline;
-  margin-right: 20px;
+  margin-right: 10px;
 }
 nav li a {
-  color: #eb3c3c;
-}
-a {
-  color: #5f2c2c;
+  color: #f382b1; /* Color de enlace original */
+  font-family: "Forte", cursive; /* Cambia la fuente a Forte */
+  font-size: 18px; /* Tamaño de fuente */
   text-decoration: none;
 }
-footer {
-  font-size: 100%;
-  padding: 20px 10px 3px 10px;
+a {
+  color: #030102; /* Color de enlace original */
+  font-family: "Forte", cursive; /* Cambia la fuente a Forte */
+  text-decoration: none;
 }
-
-
 /*info pistas*/
-
-
 .porfolios{
-  padding: 0px 0px;
-  text-align: center;
-  color: #0e0e0e;
+  padding: 0;
+  color: #ff1fa1; /* Cambia el color de texto a rosa fuerte */
+  font-family: 'Roboto', sans-serif; /* Cambia el tipo de letra a Forte */
+  width: auto;
 }
 
 .porfolio{
   display: flex;
   align-items: center;
+  margin: 10px;
+  
 }
 
 .porfolio img{
   width: 250px;
+  display: block; /* Oculta las imágenes en dispositivos móviles */
+  margin: 0 auto; /* Centra las imágenes horizontalmente */
+
 }
 .porfolio-1{
   text-align: left;
@@ -85,10 +96,11 @@ footer {
 }
 .porfolio-1 h3{
   font-size: 35px;
-  margin-left: 10px;
+  margin-left: 15px 0;
+  
 }
 .porfolio-1 p {
-  font-size: 18px;
+  font-size: 16px;
   color: #525254;
   margin-bottom: 25px;
 }
@@ -100,20 +112,26 @@ footer {
 
 .porfolio-2 h3{
   font-size: 35px;
-  margin-left: 15px;
+  margin-left: 15px 10px;
 }
 .porfolio-2 p{
-  font-size: 18px;
+  font-size: 16px;
   color: #525254;
   margin-bottom: 25px;
 }
 
 
-@media  (max-width: 444px) {
-
+@media screen and (max-width: 668px) {
+  .wrapper {
+    padding: 10px; /* Reduce el espacio de relleno en dispositivos móviles */
+    margin: 10px;
+    font-size: 14px; /* Tamaño de fuente más pequeño en dispositivos móviles */
+    display: flex center;
+  }
   .porfolios {
-    padding: 0px 30px 30px 30px;
+    padding: 0 15px 30px 15px; /* Ajusta el espaciado en dispositivos móviles */
     max-width: 100%;
+    display: flex center;
   }
   .porfolios h2 {
     margin-bottom: 15px;
@@ -139,12 +157,12 @@ footer {
   display: flex;
   align-items: center;
   padding: 0;
-  box-shadow: 0px 20px 40px rgba(18, 34, 64, 0.1);
+  box-shadow: 0px 20px 40px rgba(216, 72, 168, 0.384);
   border-radius: 60px 100px;
   position: center;
 }
 .navbar__item {
-  width: 70px;
+  width: 90px;
   height: 70px;
   position: relative;
   cursor: pointer;
@@ -158,7 +176,7 @@ footer {
 .navbar__item:after {
   content: "";
   position: absolute;
-  width: 100%;
+  width: 250%;
   height: 100%;
   background-color: currentColor;
   border-radius: 50%;
@@ -173,7 +191,7 @@ footer {
   color: #06b8ff;
 }
 .navbar__item.-orange {
-  color: #f2704d;
+  color: #f2584d;
 }
 .navbar__item.-navy-blue {
   color: #405fff;

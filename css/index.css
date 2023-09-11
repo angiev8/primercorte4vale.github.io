@@ -15,10 +15,6 @@ body{
   background-repeat: no-repeat;
   background-position: center center; /* Opcional: centra la imagen en el contenedor */
   background-attachment: fixed; /* Opcional: imagen fija durante el scroll */
-
-  
-
-
 }
 ul{
   position: relative;
