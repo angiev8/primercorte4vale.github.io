@@ -15,6 +15,8 @@
 
 body {
   min-width: 960px;
+  font-family: 'Times New Roman', Times, serif;
+  color: #eb5454;
 }
 
 section{
@@ -50,17 +52,19 @@ section img:hover{
   font-weight: normal;
   font-style: normal;}
 body {
-  color: #ffffff00;
-  background: #ffffff00 url("images\diseño.png");
+  color: #ff0303;
+  background: #ffffff url("images\diseño.png");
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 90%;
   margin: 0px;
   text-align: center;}
 a {
-  color: #000000;
-  text-decoration: none;}
+  color: #ff2424;
+  text-decoration:double;
+ font-family: 'Lucida Sans';
+  }
 a:hover {
-  color: #ffffff02;}
+  color: #0a0909;}
 .header {
   background-image: url("images/bg-header.jpg");
   padding: 0px 0px 0px 0px;
@@ -143,25 +147,32 @@ h1 {
 /*pantalla mas pequeña
 */
 @media (max-width: 768px) {
+  body {
+      font-size: 16px; /* Ajusta el tamaño de fuente para dispositivos móviles */
+  }
   .nav .header {
-    text-align: center; /* Centra los enlaces horizontalmente */
-    
+      text-align: center;
   }
 
   .nav a {
-   font-size: 12px;
-    margin: 5px 0;
-    display: none; /* Espacio entre los enlaces */
-    display: block;
-	float: none;
+      font-size: 12px;
+      margin: 5px 0;
+      display: block;
+      float: none;
+  }
+  /* Ocultar las imágenes en la sección principal */
+  section img {
+      display: none;
+  }
+  /* Estilos para mostrar solo la información en una columna */
+  .more-articles {
+      text-align: left; /* Alinea el texto a la izquierda */
+  }
+  .grid_3 {
+      width: 100%; /* Ocupa todo el ancho disponible */
+      margin-bottom: 20px; /* Espacio entre las columnas */
   }
 }
-
-
-
-
-/* `Containers
-----------------------------------------------------------------------------------------------------*/
 
 .container_12 {
   margin-left: auto;
@@ -506,7 +517,6 @@ ul {
 /*Crea la listahorizontal con espacio*/
 li {
 	display:inline-block;
-	float: left center;
 	margin-right: 10px;
 }
 
@@ -594,23 +604,5 @@ input[type=checkbox]:checked ~ #menu{
 
 /* estilos responsive */
 
-@media screen and (max-width : 760px){
-	/*Hace que el dropdown links aparescan en linea */
-	ul {
-		position: left;
-    margin: auto;
-		display: none;
-	}
-	/*Crea espacio vertical */
-	li {
-		margin-bottom: -10px;
-	}
-	/* crea todo el menu links  ancho full */
-	ul li, li a {
-		width: 100%;
-	}
-	/*Display '.muestra-menu' link*/
-	.show-menu {
-		display:block;
-	}
-}
+
+
